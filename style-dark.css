@@ -1,0 +1,123 @@
+body{
+    background-color: black;
+}
+
+div.div-links{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+div.div-insta{
+    margin-left: 10px;
+}
+
+div.div-git{
+    margin-left: 10px;    
+}
+
+div.div-linkedin{
+    margin-left: 10px;    
+}
+
+div.div-face{
+    margin-left: 10px;    
+}
+
+p.dark{
+    color: white;
+    font-size: 35px;
+    text-align: center;
+}
+
+p.footerDark{
+    color: white;
+    text-align: center;
+    margin-top: 11%;
+}
+
+img.foto{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    width: 200px;
+}
+
+img.img-insta{
+    width: 50px;
+    height: 50px;
+}
+
+img.img-git{
+    width: 65px;
+    height: 65px;
+}
+
+img.img-linkedin{
+    width: 65px;
+    height: 65px;
+}
+
+img.img-face{
+    width: 50px;
+    height: 50px;
+}
+
+/*Slider*/
+input[type="checkbox"]{
+    -webkit-appearance: none;
+    visibility: hidden;
+    display: none;
+}
+
+.check{
+    position: relative;
+    display: block;
+    width: 40px;
+    height: 20px;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: ease-in 0.3s;
+}
+
+input[type="checkbox"]:checked ~ .check{
+    background-color: black;
+}
+
+.check:after{
+    content: '';
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    background: black;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+input[type="checkbox"]:checked ~ .check:after{
+    transform: translateX(20px);
+}
+
+.check:before{
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    background: black;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    transition: 0.5s;
+    transform: translateX(-20px);
+}
+
+input[type="checkbox"]:checked ~ .check:before{
+    transform: translateX(0px);
+}
